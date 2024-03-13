@@ -17,14 +17,43 @@ body {
 }
 
 main {
+    position: relative;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 311px;
     height: 617px;
     background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+section#redes-socias {
+    text-align: right;
+}
+
+section#redes-socias img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.384);
+    box-sizing: border-box;
+}
+
+section#redes-socias img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.61);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.568);
+    transition: 0.5s;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    height: 471px;
+    width: 267px;
 }
